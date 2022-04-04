@@ -128,7 +128,7 @@ ul.menu li.expanded {
  * Header contents.
  */
 .breadcrumb {
-  font-size: .75em;
+  font-size: 0.75em;
   padding-bottom: 5px;
 }
 .breadcrumb li,
@@ -143,7 +143,7 @@ ul.menu li.expanded {
   float: right;
 }
 .breadcrumb li:after {
-  content: '';
+  content: "";
   display: inline-block;
   width: 1em;
   height: 1em;
@@ -292,10 +292,8 @@ ul.primary li.active a,
   line-height: 1;
   color: #606060;
   font-weight: normal;
-  background-color: #DBDBD9;
-  transition:
-    background-color 0.5s ease 0s,
-    color 0.5s ease 0s;
+  background-color: #dbdbd9;
+  transition: background-color 0.5s ease 0s, color 0.5s ease 0s;
   will-change: background-color, color;
 }
 ul.primary li.active a,
@@ -363,15 +361,13 @@ ul.secondary li a {
   background: #ddd;
   color: #000;
   font-weight: normal;
-  transition:
-    background-color 0.6s ease,
-    color 0.6s ease;
+  transition: background-color 0.6s ease, color 0.6s ease;
 }
 ul.secondary li a,
 ul.secondary li a:hover,
 ul.secondary li.active a,
 ul.secondary li.active a.active {
-  padding: .36em 1em;
+  padding: 0.36em 1em;
 }
 ul.secondary li a:hover {
   color: #000;
@@ -401,7 +397,7 @@ ul.secondary li.active a.active {
 }
 .l-header:before {
   /* Gray bar background */
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   bottom: 0;
@@ -417,7 +413,7 @@ ul.secondary li.active a.active {
 }
 .l-header:after {
   /* Clearfix for IE8 issue */
-  content: '';
+  content: "";
   display: table;
   clear: both;
 }
@@ -518,14 +514,9 @@ tr.even,
 tr.odd {
   border: 0;
   background: #f7f7f7;
-  -webkit-box-shadow:
-    inset -1px 0 0 #eee,
-    inset 0 -1px 0 0 #eee,
+  -webkit-box-shadow: inset -1px 0 0 #eee, inset 0 -1px 0 0 #eee,
     inset 1px 0 0 #eee;
-  box-shadow:
-    inset -1px 0 0 #eee,
-    inset 0 -1px 0 0 #eee,
-    inset 1px 0 0 #eee;
+  box-shadow: inset -1px 0 0 #eee, inset 0 -1px 0 0 #eee, inset 1px 0 0 #eee;
 }
 tr.odd {
   background: #fff;
@@ -604,7 +595,7 @@ td.active {
   background: #e9e8e8;
 }
 tr.odd td.active {
-  background: #F5F5F5;
+  background: #f5f5f5;
 }
 tr.selected td.active,
 tr.selected td {
@@ -676,8 +667,8 @@ fieldset .fieldset-legend {
   box-sizing: border-box;
 }
 fieldset:not(.collapsible) > legend > .fieldset-legend {
-  margin-top: .35em;
-  margin-bottom: .35em;
+  margin-top: 0.35em;
+  margin-bottom: 0.35em;
 }
 [dir="rtl"] fieldset .fieldset-legend {
   right: 0;
@@ -694,7 +685,7 @@ legend {
 }
 .fieldset-description,
 .fieldset-description p {
-  margin: .5em 0;
+  margin: 0.5em 0;
 }
 fieldset fieldset {
   background-color: #fff;
@@ -724,15 +715,15 @@ fieldset .fieldset-wrapper::before {
   position: relative;
   z-index: 1;
   display: block;
-  padding: .3em .3em .3em 1.8em;
-  margin: 0 0 0 -.5em;
+  padding: 0.3em 0.3em 0.3em 1.8em;
+  margin: 0 0 0 -0.5em;
   border-radius: 4px;
   background: transparent;
 }
 .js[dir="rtl"] fieldset.collapsible .fieldset-title {
   background-image: none;
-  padding: .3em 1.8em .3em .3em;
-  margin: 0 -.5em 0 0;
+  padding: 0.3em 1.8em 0.3em 0.3em;
+  margin: 0 -0.5em 0 0;
 }
 .js fieldset.collapsible .fieldset-legend {
   font-size: 1em;
@@ -740,31 +731,31 @@ fieldset .fieldset-wrapper::before {
 .js fieldset.collapsible .fieldset-legend a:before {
   content: "";
   position: absolute;
-  left: .6em;
-  top: .8em;
+  left: 0.6em;
+  top: 0.8em;
   width: 0;
   height: 0;
-  border: .32em solid transparent;
+  border: 0.32em solid transparent;
   border-top-color: #000;
   border-bottom: 0;
 }
 .js[dir="rtl"] fieldset.collapsible .fieldset-legend a:before {
   left: auto;
-  right: .6em;
+  right: 0.6em;
 }
 
 .fieldset-legend span.summary {
   position: absolute;
-  top: .4em;
+  top: 0.4em;
   right: 2em;
   /* Hide the summary by default; we show it on wider screens (see below). */
   display: none;
 }
 .fieldset-legend span.summary:not(:empty):before {
-  content: '(';
+  content: "(";
 }
 .fieldset-legend span.summary:not(:empty):after {
-  content: ')';
+  content: ")";
 }
 @media (min-width: 450px) {
   .fieldset-legend span.summary {
@@ -775,14 +766,14 @@ fieldset .fieldset-wrapper::before {
 
 /* Collapsed state styles */
 .js fieldset.collapsed .fieldset-legend a:before {
-  left: .8em;
-  top: .75em;
-  border: .32em solid transparent;
+  left: 0.8em;
+  top: 0.75em;
+  border: 0.32em solid transparent;
   border-left-color: black;
 }
 .js[dir="rtl"] fieldset.collapsed .fieldset-legend a:before {
   left: auto;
-  right: .8em;
+  right: 0.8em;
   border-left-color: transparent;
   border-right-color: black;
 }
@@ -793,7 +784,7 @@ fieldset .fieldset-wrapper::before {
 details {
   padding: 6px 15px;
   border-radius: 0 0 4px 4px;
-  border: 2px solid #EAEAEA;
+  border: 2px solid #eaeaea;
   margin: 1em 0;
   overflow: hidden;
   background-color: #ffffff;
@@ -816,7 +807,7 @@ form.views-exposed-form {
   padding: 7px 13px;
   border-radius: 4px;
   background-color: #fff;
-  border: 2px solid #EAEAEA;
+  border: 2px solid #eaeaea;
 }
 
 /**
@@ -833,11 +824,11 @@ form.views-exposed-form {
 #autocomplete {
   border: 2px solid #d0d0d0;
   border-top: 0;
-  background: hsla(0,0%,100%,0.95);
+  background: hsla(0, 0%, 100%, 0.95);
   -webkit-border-radius: 0 0 4px 4px;
   -moz-border-radius: 0 0 4px 4px;
   border-radius: 0 0 4px 4px;
-  box-shadow: 0 2px 5px 0 hsla(0,0%,0%,0.15);
+  box-shadow: 0 2px 5px 0 hsla(0, 0%, 0%, 0.15);
 }
 #autocomplete ul {
   padding: 5px 0;
@@ -920,7 +911,7 @@ td.checkbox .form-item input {
   border-radius: 0;
 }
 .js fieldset.filter-wrapper.collapsible .fieldset-legend {
-  font-size: .8333em;
+  font-size: 0.8333em;
   text-transform: none;
 }
 .filter-wrapper .fieldset-wrapper {
@@ -989,28 +980,28 @@ a.button {
   margin-right: 0;
 }
 .form-managed-file input.form-submit {
-  margin-left: .5em; /* LTR */
+  margin-left: 0.5em; /* LTR */
   position: relative;
   top: 1px;
 }
 [dir="rtl"] .form-managed-file input.form-submit {
   margin-left: 0;
-  margin-right: .5em;
+  margin-right: 0.5em;
 }
 a.button:hover,
 input.form-submit:hover,
 a.button:focus,
 input.form-submit:focus {
   text-decoration: none;
-  background-color: #CFDE56;
-  border-color: #CFDE56;
+  background-color: #cfde56;
+  border-color: #cfde56;
 }
 a.button:active,
 input.form-submit:active {
   /* @todo, decide on an active state */
   text-decoration: none;
-  background-color: #CFDE56;
-  border-color: #CFDE56;
+  background-color: #cfde56;
+  border-color: #cfde56;
   -webkit-box-shadow: 0 0 5px rgb(220, 220, 220);
   -moz-box-shadow: 0 0 5px rgb(220, 220, 220);
   box-shadow: 0 0 5px rgb(220, 220, 220);
@@ -1237,7 +1228,8 @@ div.filter-options select {
   font-size: 0.923em;
   text-transform: uppercase;
   /* All icons derived from Font Awesome. See README.md in the Seven theme.*/
-  background: url('../images/chevron-circle-right--black--64.png') no-repeat left center; /* LTR */
+  background: url("../images/chevron-circle-right--black--64.png") no-repeat
+    left center; /* LTR */
   background-size: 23px;
 }
 [dir="rtl"] .admin-panel .block-title,
@@ -1245,10 +1237,12 @@ div.filter-options select {
   margin-left: 0;
   margin-right: 9px;
   padding: 6px 35px 6px 0;
-  background: url('../images/chevron-circle-left--black--64.png') no-repeat right center; /* LTR */
+  background: url("../images/chevron-circle-left--black--64.png") no-repeat
+    right center; /* LTR */
   background-size: 23px;
 }
-@media (min-width: 34em) { /* 544px @ 16px font size -- SM */
+@media (min-width: 34em) {
+  /* 544px @ 16px font size -- SM */
   .admin-panel .block-content {
     padding: 0 15px 15px;
   }
@@ -1268,55 +1262,55 @@ div.filter-options select {
 
 /* Add special icons for admin/config */
 .admin-panel-people h3 {
-  background-image: url('../images/users--black--64.png');
+  background-image: url("../images/users--black--64.png");
 }
 .admin-panel-content h3 {
-  background-image: url('../images/pencil-square-o--black--64.png');
+  background-image: url("../images/pencil-square-o--black--64.png");
 }
 .admin-panel-system h3 {
-  background-image: url('../images/hdd-o--black--64.png');
+  background-image: url("../images/hdd-o--black--64.png");
 }
 .admin-panel-administration h3 {
-  background-image: url('../images/cog--black--64.png');
+  background-image: url("../images/cog--black--64.png");
 }
 .admin-panel-media h3 {
-  background-image: url('../images/picture-o--black--64.png');
+  background-image: url("../images/picture-o--black--64.png");
 }
 .admin-panel-search h3 {
-  background-image: url('../images/search--black--64.png');
+  background-image: url("../images/search--black--64.png");
 }
 .admin-panel-regional h3 {
-  background-image: url('../images/globe--black--64.png');
+  background-image: url("../images/globe--black--64.png");
 }
 .admin-panel-urls h3 {
-  background-image: url('../images/link--black--64.png');
+  background-image: url("../images/link--black--64.png");
 }
 .admin-panel-development h3 {
-  background-image: url('../images/wrench--black--64.png');
+  background-image: url("../images/wrench--black--64.png");
 }
 .admin-panel-services h3 {
-  background-image: url('../images/rss--black--64.png');
+  background-image: url("../images/rss--black--64.png");
 }
 
 /* Add special icons for admin/dashboard */
 
 .block-dashboard-welcome .block-title {
-  background-image: url('../images/backdrop-logo-mark--64.png');
+  background-image: url("../images/backdrop-logo-mark--64.png");
 }
 .block-dashboard-create .block-title {
-  background-image: url('../images/pencil-square-o--black--64.png');
+  background-image: url("../images/pencil-square-o--black--64.png");
 }
 .block-dashboard-overview-content .block-title {
-  background-image: url('../images/pencil-alt--black--64.png');
+  background-image: url("../images/pencil-alt--black--64.png");
 }
 .block-dashboard-overview-user .block-title {
-  background-image: url('../images/users--black--64.png');
+  background-image: url("../images/users--black--64.png");
 }
 .block-dashboard-updates .block-title {
-  background-image: url('../images/info-circle--black--64.png');
+  background-image: url("../images/info-circle--black--64.png");
 }
 .block-dashboard-news .block-title {
-  background-image: url('../images/bell--black--64.png');
+  background-image: url("../images/bell--black--64.png");
 }
 
 /* admin/appearance */
@@ -1341,7 +1335,7 @@ div.filter-options select {
   padding: 20px 0 0;
   border-radius: 4px;
   background-color: #f7f7f7;
-  border: 2px solid #EAEAEA;
+  border: 2px solid #eaeaea;
 }
 #layout-edit-main .layout {
   margin: 0;
@@ -1367,13 +1361,14 @@ div.filter-options select {
   padding: 20px 0;
   border-radius: 4px;
   background-color: #f7f7f7;
-  border: 2px solid #EAEAEA;
+  border: 2px solid #eaeaea;
 }
 
 /**
  * Pretty block radios, `:not(#foo) >` rules out browsers that can't support this
  */
-:not(#foo) > .layout-settings-form .layout-options .form-type-radio input, .form-item-region-style .form-type-radio input {
+:not(#foo) > .layout-settings-form .layout-options .form-type-radio input,
+.form-item-region-style .form-type-radio input {
   /* Hide radios from visuals but not screen-readers */
   position: absolute;
   width: 1px;
@@ -1390,14 +1385,18 @@ div.filter-options select {
   position: relative;
   z-index: 2; /* Fix IE issue clicking on image doesn't trigger radio */
   display: block;
-  padding: .6em;
+  padding: 0.6em;
   border: 2px solid transparent;
   border-radius: 4px;
   min-height: 145px;
-  -webkit-transition: border-color 0.25s ease-in-out, background-color 0.25s ease-in-out;
-  -moz-transition: border-color 0.25s ease-in-out, background-color 0.25s ease-in-out;
-  -ms-transition: border-color 0.25s ease-in-out, background-color 0.25s ease-in-out;
-  -o-transition: border-color 0.25s ease-in-out, background-color 0.25s ease-in-out;
+  -webkit-transition: border-color 0.25s ease-in-out,
+    background-color 0.25s ease-in-out;
+  -moz-transition: border-color 0.25s ease-in-out,
+    background-color 0.25s ease-in-out;
+  -ms-transition: border-color 0.25s ease-in-out,
+    background-color 0.25s ease-in-out;
+  -o-transition: border-color 0.25s ease-in-out,
+    background-color 0.25s ease-in-out;
   transition: border-color 0.25s ease-in-out, background-color 0.25s ease-in-out;
   will-change: border-color, background-color;
 }
@@ -1422,10 +1421,18 @@ div.filter-options select {
 .form-item-region-style .form-type-radio:hover input:checked + label,
 .layout-settings-page .layout-options .form-type-checkbox input:focus + label,
 .layout-settings-page .layout-options .form-type-checkbox input:hover + label,
-.layout-settings-page .layout-options .form-type-checkbox:hover input:checked + label,
+.layout-settings-page
+  .layout-options
+  .form-type-checkbox:hover
+  input:checked
+  + label,
 .layout-settings-form .layout-options .form-type-radio input:focus + label,
 .layout-settings-form .layout-options .form-type-radio input:hover + label,
-.layout-settings-form .layout-options .form-type-radio:hover input:checked + label {
+.layout-settings-form
+  .layout-options
+  .form-type-radio:hover
+  input:checked
+  + label {
   background-color: #ffffff;
   border-color: #43afe4;
 }
@@ -1491,7 +1498,7 @@ div.admin-options div.form-item {
 /* Status report */
 table.system-status-report {
   border-collapse: separate;
-  border: 2px solid #EAEAEA;
+  border: 2px solid #eaeaea;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
@@ -1500,7 +1507,7 @@ table.system-status-report {
 /* Update report */
 table.update {
   border-collapse: separate;
-  border: 2px solid #EAEAEA;
+  border: 2px solid #eaeaea;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
@@ -1508,7 +1515,7 @@ table.update {
 
 /* Maintenance page styles */
 body.maintenance-page {
-  background: #E8E6E5;
+  background: #e8e6e5;
   padding: 1em;
 }
 body.maintenance-page #page {
@@ -1523,8 +1530,8 @@ body.maintenance-page #page:after {
   left: 100%; /* LTR */
   border: solid transparent;
   border-color: rgba(255, 255, 255, 0);
-  border-left-color: #E8E6E5; /* LTR */
-  border-top-color: #E8E6E5; /* LTR */
+  border-left-color: #e8e6e5; /* LTR */
+  border-top-color: #e8e6e5; /* LTR */
   border-width: 17px;
   content: " ";
   height: 0;
@@ -1598,11 +1605,10 @@ ol.task-list {
   padding-left: 0; /* LTR */
   padding-right: 17px;
   padding-bottom: 1em;
-  font-size: .9em;
+  font-size: 0.9em;
   text-align: left; /* LTR */
   list-style-type: none;
   list-style-image: none;
-
 }
 [dir="rtl"] ol.task-list {
   text-align: right;
@@ -1613,22 +1619,22 @@ body.maintenance-page ol.task-list {
   margin-top: 50px;
 }
 ol.task-list li {
-  padding: .75em;
+  padding: 0.75em;
   color: #1a1a1a;
   line-height: 20px;
 }
 ol.task-list li.active {
-  padding: .75em;
+  padding: 0.75em;
   font-weight: normal;
   color: #000;
-  background: #E8E6E5;
+  background: #e8e6e5;
   position: relative;
 }
 ol.task-list li.active:after {
   left: 100%; /* LTR */
   border: solid transparent;
   border-color: rgba(255, 255, 255, 0);
-  border-left-color: #E8E6E5; /* LTR */
+  border-left-color: #e8e6e5; /* LTR */
   border-width: 21px;
   content: " ";
   height: 0;
@@ -1644,7 +1650,7 @@ ol.task-list li.active:after {
   left: auto;
   right: 100%;
   border-left-color: transparent;
-  border-right-color: #E8E6E5;
+  border-right-color: #e8e6e5;
 }
 ol.task-list .task-item {
   display: inline-block;
@@ -1657,13 +1663,13 @@ ol.task-list .task-item {
   margin-left: 0;
 }
 ol.task-list .done:before {
-  content: ' ';
+  content: " ";
   display: inline-block;
   position: absolute;
   width: 25px;
   height: 25px;
   border-radius: 15px;
-  background: #CFDE56 url(../../../misc/icon-ok.png) no-repeat center center;
+  background: #cfde56 url(../../../misc/icon-ok.png) no-repeat center center;
   background-size: 60%;
 }
 
@@ -1686,7 +1692,7 @@ div.add-or-remove-shortcuts {
 /* Field UI */
 #field-display-overview input.field-formatter-settings-edit {
   margin: 0;
-  padding: .4em 1em;
+  padding: 0.4em 1em;
   line-height: 1.2;
 }
 #field-display-overview tr.field-formatter-settings-changed {
@@ -1701,7 +1707,10 @@ div.add-or-remove-shortcuts {
 #field-display-overview .field-formatter-settings-edit-form .form-item {
   margin: 10px 0;
 }
-#field-display-overview .field-formatter-settings-edit-form .form-item .form-item {
+#field-display-overview
+  .field-formatter-settings-edit-form
+  .form-item
+  .form-item {
   margin: 0;
 }
 #field-display-overview .field-formatter-settings-edit-form .form-submit {
@@ -1734,7 +1743,7 @@ div.add-or-remove-shortcuts {
 
 /* Dropbutton */
 .js .dropbutton-widget {
-  border: 1px solid #E9E8E8;
+  border: 1px solid #e9e8e8;
 }
 .js .dropbutton-wrapper.open .dropbutton-widget {
   border-color: #0d68a6;
@@ -1856,7 +1865,7 @@ div.add-or-remove-shortcuts {
     display: block;
     font-size: 1em;
     position: absolute;
-    top: .5em;
+    top: 0.5em;
     right: 0;
   }
   [dir="rtl"] body.maintenance-page .step-indicator {
@@ -1873,7 +1882,7 @@ div.add-or-remove-shortcuts {
   font-weight: bold;
 }
 .progress .bar {
-  margin: 0 0.2em .5em 0;
+  margin: 0 0.2em 0.5em 0;
   border: 2px solid #d0d0d0;
   border-radius: 4px;
   overflow: hidden;
@@ -1882,37 +1891,42 @@ div.add-or-remove-shortcuts {
 }
 .progress .filled {
   background: #0074bd;
-  background-image: -webkit-linear-gradient(#0085D9, #0074bd);
+  background-image: -webkit-linear-gradient(#0085d9, #0074bd);
   height: 100%;
   position: relative;
   overflow: hidden;
   border-radius: 3px;
 }
 .progress .filled:after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   overflow: hidden;
-  -webkit-transition: width .4s;
-  transition: width .4s;
+  -webkit-transition: width 0.4s;
+  transition: width 0.4s;
   will-change: width;
-  background-image: -webkit-gradient(linear, 0 0, 100% 100%,
-    color-stop(.25, rgba(255, 255, 255, .2)),
-    color-stop(.25, transparent), color-stop(.5, transparent),
-    color-stop(.5, rgba(255, 255, 255, .2)),
-    color-stop(.75, rgba(255, 255, 255, .2)),
-    color-stop(.75, transparent), to(transparent)
+  background-image: -webkit-gradient(
+    linear,
+    0 0,
+    100% 100%,
+    color-stop(0.25, rgba(255, 255, 255, 0.2)),
+    color-stop(0.25, transparent),
+    color-stop(0.5, transparent),
+    color-stop(0.5, rgba(255, 255, 255, 0.2)),
+    color-stop(0.75, rgba(255, 255, 255, 0.2)),
+    color-stop(0.75, transparent),
+    to(transparent)
   );
   background-image: linear-gradient(
     -45deg,
-    rgba(255, 255, 255, .2) 25%,
+    rgba(255, 255, 255, 0.2) 25%,
     transparent 25%,
     transparent 50%,
-    rgba(255, 255, 255, .2) 50%,
-    rgba(255, 255, 255, .2) 75%,
+    rgba(255, 255, 255, 0.2) 50%,
+    rgba(255, 255, 255, 0.2) 75%,
     transparent 75%,
     transparent
   );
@@ -1934,13 +1948,28 @@ div.add-or-remove-shortcuts {
  * Progress bar animations.
  */
 @-webkit-keyframes animate-stripes {
-  0% { background-position: 0 0; } 100% { background-position: 50px 50px; }
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 50px 50px;
+  }
 }
 @-ms-keyframes animate-stripes {
-  0% { background-position: 0 0; } 100% { background-position: 50px 50px; }
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 50px 50px;
+  }
 }
 @keyframes animate-stripes {
-  0% { background-position: 0 0; } 100% { background-position: 50px 50px; }
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 50px 50px;
+  }
 }
 
 /**
@@ -1966,16 +1995,14 @@ table .machine-name {
  *
  *
  */
- body
- { color: red ;}
-
-div {
-  background-color: #FFFfff;
-
+body {
+  color: red;
 }
 
+div {
+  background-color: #ffffff;
+}
 
-
-a    {
-    font: "comic sans"
-;}
+a {
+  font: "comic sans";
+}
