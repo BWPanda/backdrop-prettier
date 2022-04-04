@@ -8,6 +8,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: creyD/prettier_action@v4
+      - uses: creyD/prettier_action@v4.2
         with:
           prettier_options: core/**/*.{css,js}
