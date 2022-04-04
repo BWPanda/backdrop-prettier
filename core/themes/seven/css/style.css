@@ -1993,16 +1993,14 @@ table .machine-name {
 /**
  * Some new code that tests the Prettier code formatter.
  */
- body
- { color: red ;}
-
-div {
-  background-color: #FFFfff;
-
+body {
+  color: red;
 }
 
+div {
+  background-color: #ffffff;
+}
 
-
-a    {
-    font: "comic sans"
-;}
+a {
+  font: "comic sans";
+}
