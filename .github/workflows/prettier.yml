@@ -12,5 +12,5 @@ jobs:
           fetch-depth: 0
       - uses: creyD/prettier_action@v4.2
         with:
-          prettier_options: core/**/*.{css,js}
+          prettier_options: --check core/**/*.{css,js}
           only_changed: True
