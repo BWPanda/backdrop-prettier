@@ -28,6 +28,7 @@
 li.leaf,
 ul.menu li {
   list-style-type: disc;
+
   list-style-image: none;
 }
 ul.menu li {
