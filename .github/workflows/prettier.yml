@@ -19,3 +19,4 @@ jobs:
           prettier_options: --check core/**/*.{css,js}
           # Only changes files affected by this PR.
           only_changed: True
+          dry: True
