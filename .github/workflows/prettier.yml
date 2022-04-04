@@ -8,7 +8,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: EPMatt/reviewdog-action-prettier@v1
+      - uses: creyD/prettier_action@v4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          reporter: github-pr-review
+          prettier_options: core/**/*.{css,js}

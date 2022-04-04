@@ -1,7 +1,7 @@
 name: Functional tests
-on:
-  pull_request:
-    branches: [1.*]
+# on:
+#   pull_request:
+#     branches: [1.*]
 jobs:
   simpletest:
     name: Simpletest batches
