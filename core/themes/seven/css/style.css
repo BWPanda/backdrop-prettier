@@ -1,12 +1,14 @@
 /**
  * Blocks.
+ *
  */
-.block {
+.block
+{
   width: 100%;
   /* Clearfix */
   content: "";
   display: table;
-  clear: both;
+  clear:both;
 }
 
 /**
