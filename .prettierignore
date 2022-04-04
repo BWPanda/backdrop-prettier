@@ -1,8 +1,11 @@
+# Core directories.
 /core/misc/ckeditor
 /core/misc/farbtastic
 /core/misc/opensans
 /core/misc/smartmenus
 /core/misc/ui
+
+# Core files.
 /core/misc/html5.js
 /core/misc/jquery*.js
 /core/misc/normalize.css

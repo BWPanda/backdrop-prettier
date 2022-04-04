@@ -16,7 +16,6 @@ jobs:
       - uses: creyD/prettier_action@v4.2
         with:
           # Makes a commit of changes to core CSS/JS files.
-          prettier_options: --check core/**/*.{css,js}
+          prettier_options: --write core/**/*.{css,js}
           # Only changes files affected by this PR.
           only_changed: True
-          dry: True
