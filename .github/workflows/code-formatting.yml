@@ -1,15 +1,21 @@
 name: Code formatting
 on:
-  pull_request:
+  # pull_request:
+  #   branches: [1.*]
+  pull_request_target:
     branches: [1.*]
 jobs:
   prettier:
     name: Prettier
     runs-on: ubuntu-latest
     steps:
+      # - run: echo ${{ toJSON(github.event) }}
       - uses: actions/checkout@v3
         with:
+          # Checkout the forked repo.
+          # repository: ${{ github.event.pull_request.head.repo.full_name }}
           # Make sure we're on the PR's source branch.
+          # ref: ${{ github.event.pull_request.head.ref }}
           ref: ${{ github.head_ref }}
           # This is required for the 'only_changed' setting to work.
           fetch-depth: 0
