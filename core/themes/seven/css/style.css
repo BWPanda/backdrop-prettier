@@ -1,13 +1,19 @@
 /**
  * Blocks.
  */
-.block {
-  width: 100%;
-  /* Clearfix */
-  content: "";
-  display: table;
-  clear: both;
-}
+.block   {
+  width:
+100%;
+			  /* Clearfix */
+  content: ""
+;
+  display  : table;
+
+
+
+
+  clear: both
+;}
 
 /**
  * Menus and lists.
