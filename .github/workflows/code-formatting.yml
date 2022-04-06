@@ -7,11 +7,13 @@ jobs:
     name: Prettier
     runs-on: ubuntu-latest
     steps:
-      - run: echo ${{ toJSON(github.event) }}
+      # - run: echo ${{ toJSON(github.event) }}
       - uses: actions/checkout@v3
         with:
+          # Checkout the forked repo.
+          repository: ${{ github.event.pull_request.head.repo.full_name }}
           # Make sure we're on the PR's source branch.
-          ref: ${{ github.head_ref }}
+          ref: ${{ github.event.pull_request.head.ref }}
           # This is required for the 'only_changed' setting to work.
           fetch-depth: 0
       - uses: creyD/prettier_action@v4.2
