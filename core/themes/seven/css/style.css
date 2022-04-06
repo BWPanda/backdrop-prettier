@@ -1989,3 +1989,18 @@ table .machine-name {
 [dir="rtl"] .tabledrag-handles-shown .machine-name {
   padding-right: 28px;
 }
+
+/**
+ * Some new code that tests the Prettier code formatter.
+ */
+body {
+  color: red;
+}
+
+div {
+  background-color: #ffffff;
+}
+
+a {
+  font: "comic sans";
+}
